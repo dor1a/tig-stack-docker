@@ -7,7 +7,7 @@ services:
     restart: always
     network_mode: "host"
     volumes:
-      - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro 
+      - ./telegraf/config/telegraf.conf:/etc/telegraf/telegraf.conf:ro 
       - /usr/share/snmp/mibs:/usr/share/snmp/mibs:ro
       - /:/hostfs:ro
 
