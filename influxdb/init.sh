@@ -4,5 +4,5 @@ docker run --rm \
   -e INFLUXDB_ADMIN_PASSWORD= \
   -e INFLUXDB_USER= \
   -e INFLUXDB_USER_PASSWORD= \
-  -v $PWD/influxdb/library:/var/lib/influxdb \
-  influxdb:latest /init-influxdb.sh
+  -v $PWD/library:/var/lib/influxdb \
+  influxdb:1.8 /init-influxdb.sh
